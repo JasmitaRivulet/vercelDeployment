@@ -20,11 +20,11 @@ useSeoMeta({
   </section>
   <section class="site-section cart__total">
     <p v-if="!(items.length === 0)" class="cart__total-items">
-      Total items:
+      Total items :
       {{ items.reduce((acc, item) => acc + item.quantity, 0) }}
     </p>
     <p class="cart__total-price">
-      Total price:
+      Total price :
       {{
         formatPrice(
           items.reduce(
